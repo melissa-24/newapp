@@ -1,12 +1,24 @@
+/* background-color E3DEC4 */
+/* font 070C14 */
+/* nav-font E3DEC4 */
+/* nav-background 3E8E95 */
+/* alt background (purple) AB7C74 */
+/* border colors CC9B51 */
+
 .App {
   text-align: center;
-  color: #3f3221;
+  color: #070C14;
+  background-color: #E3DEC4;
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav {
+ background-color: #3E8E95; 
+ color: #E3DEC4;
+ border-bottom: 3px solid #cc9b51;
+ margin-bottom: 1em;
+ padding: 1em 0;
+}
+
+.home-img {
+  width: 300px;
 }

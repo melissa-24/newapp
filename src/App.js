@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Route, Link, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
+import Home from './components/Home'
 
 export default function App() {
 
-
+  const [products, setProducts] = useState();
   return (
     <div className="App">
       <nav>
@@ -14,16 +13,16 @@ export default function App() {
           <h1>Melissa Longenberger</h1>
         </div>
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
+         <Link to="/">Home</Link>
+          Projects
         </div>
       </nav>
       <Switch>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/" component={Home} />
+      <Route path="/" component={Home} />
       </Switch>
+      <div className="home-page">
+        Home Page Information
+      </div>
       <div className="footer">
         <h4>&copy; 2020 by Melissa Longenberger</h4>
       </div>
